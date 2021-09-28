@@ -1,8 +1,8 @@
 # Embedding Images and Video
 
-> ## From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/embedding-images-and-video)
+From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/embedding-images-and-video)
 
-> - [Live Demo](https://igorashs.github.io/embedding-images-and-video/)
+[Live Demo]()
 
 ## Assignment
 
