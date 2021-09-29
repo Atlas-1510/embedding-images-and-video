@@ -10,6 +10,8 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/embe
 
 ## Acknowledgments
 
+- Heroicons (tailwind)
+
 ## License
 
 This project is licensed under the MIT License
