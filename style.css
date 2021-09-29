@@ -1,3 +1,11 @@
+/* Utility Classes */
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* General */
 
 :root {
@@ -5,8 +13,6 @@
   --nav-color: #212121;
   --search-button-color: hsl(0, 0%, 18.82%);
   --main-color: rgb(24, 24, 24);
-  /* --nav-color: blue; */
-  /* --main-color: pink; */
   --text-color: white;
   --content-column-spacing: 24px;
 }
@@ -49,32 +55,22 @@ main {
 /* Nav Bar Content */
 
 nav > .start {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0 15px;
+  cursor: pointer;
 }
 
 nav > .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 40px;
 }
 
 nav > .end {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 15px;
 }
 
 .logo-container {
   height: var(--nav-height);
   width: 90px;
   pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hamburger-icon {
@@ -109,7 +105,37 @@ nav > .end {
   border-left: none;
   background-color: var(--search-button-color);
   padding: 0 20px;
-  margin: 0;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.microphone-icon {
+  height: 100%;
+  width: 40px;
+  padding: 10px;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navEndButton {
+  height: 35px;
+  width: 35px;
+  border: none;
+  background-color: transparent;
+  margin-right: 15px;
+}
+
+.account-button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: larger;
+  background-color: rgb(236, 64, 122);
+  margin: 0 0 0 15px;
 }
 
 /* Primary Column Content */
