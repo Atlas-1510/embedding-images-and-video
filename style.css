@@ -278,7 +278,57 @@ nav > .end {
 
 .comment-section-header {
   height: 12vh;
-  /* background-color: orange; */
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+
+.comment-section-header > div {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem 0 0 0;
+}
+
+.comment-count {
+  margin: 0 1rem 0 0;
+}
+
+.comment-sort-button {
+  font-size: smaller;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-sort-button > svg {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.comment-sort-button > span {
+  white-space: nowrap;
+}
+
+.account-button-comment-header {
+  height: 35px;
+  width: 35px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: larger;
+  background-color: rgb(236, 64, 122);
+}
+
+.comment-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--search-button-color);
+  width: 100%;
+  margin: 0 0 0 1rem;
+  padding: 0.2rem;
 }
 
 .comments-container {
