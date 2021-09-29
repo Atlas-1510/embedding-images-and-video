@@ -1,0 +1,83 @@
+/* General */
+
+:root {
+  --nav-height: 56px;
+  /* --nav-color: #212121; */
+  /* --main-color: rgb(24, 24, 24); */
+  --nav-color: blue;
+  --main-color: pink;
+  --content-column-spacing: 24px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  color: #fff;
+}
+
+/* Page Structure */
+
+nav {
+  background-color: var(--nav-color);
+  height: var(--nav-height);
+}
+
+main {
+  background-color: var(--main-color);
+  min-height: calc(100vh - var(--nav-height));
+  display: grid;
+  grid-template-columns: [primary-start] 70% [primary-end secondary-start] 30% [secondary-end];
+  grid-template-areas: "primary primary secondary";
+}
+
+.primary-column {
+  background-color: green;
+  grid-area: primary;
+  padding: var(--content-column-spacing) var(--content-column-spacing) 0 0;
+  margin-left: var(--content-column-spacing);
+}
+
+.secondary-column {
+  grid-area: secondary;
+  padding: var(--content-column-spacing) var(--content-column-spacing) 0 0;
+}
+
+/* Primary Column Content */
+
+.video-player {
+  height: 45vh;
+  background-color: aqua;
+}
+
+.video-info {
+  height: 10vh;
+  background-color: lightcoral;
+}
+
+.video-meta {
+  height: 18vh;
+  background-color: purple;
+}
+
+.comment-section-header {
+  height: 12vh;
+  background-color: orange;
+}
+
+.comments-container {
+  height: 70vh;
+  background-color: cornflowerblue;
+}
+
+/* Secondary Column Content */
+
+.tags-collection {
+  height: 4vh;
+  background-color: chartreuse;
+}
+
+.suggestions-container {
+  margin: 0;
+  height: 151vh;
+  background-color: cadetblue;
+}
