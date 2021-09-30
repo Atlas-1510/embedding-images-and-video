@@ -164,7 +164,6 @@ nav > .end {
   width: 100%;
   aspect-ratio: 16/9;
   display: block;
-  background-color: aqua;
 }
 
 .video-info {
@@ -472,6 +471,7 @@ nav > .end {
 
 .suggestion {
   width: 100%;
+  cursor: pointer;
   margin-bottom: 0.5rem;
   display: grid;
   grid-template-columns: [image-start] 35% [image-end info-start] 1fr [info-end];
