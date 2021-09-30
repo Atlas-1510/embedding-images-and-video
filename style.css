@@ -57,6 +57,8 @@ main {
 .secondary-column {
   grid-area: secondary;
   padding: var(--content-column-spacing) var(--content-column-spacing) 0 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Nav Bar Content */
@@ -410,12 +412,46 @@ nav > .end {
 /* Secondary Column Content */
 
 .tags-collection {
-  height: 4vh;
-  background-color: chartreuse;
+  position: relative;
+  white-space: nowrap;
+  margin: 0 0 1rem 0;
+}
+
+.tags-collection:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--main-color) 85%
+  );
+  width: 15%;
+}
+
+.tags-container {
+  width: 100%;
+  overflow-x: scroll;
+  padding-right: 2.5rem;
+}
+
+.tags-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tag {
+  background-color: var(--nav-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--search-button-color);
+  border-radius: 2rem;
+  display: inline-block;
 }
 
 .suggestions-container {
   margin: 0;
   height: 151vh;
-  background-color: cadetblue;
 }
