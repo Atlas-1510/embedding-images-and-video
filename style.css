@@ -453,5 +453,71 @@ nav > .end {
 
 .suggestions-container {
   margin: 0;
-  height: 151vh;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.suggestion {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: [image-start] 35% [image-end info-start] 1fr [info-end];
+  grid-template-rows: [title-start] 50% [title-end meta-start] 50% [meta-end];
+  grid-template-areas:
+    "image title"
+    "image meta"
+    "image meta";
+}
+
+.image-container {
+  position: relative;
+  grid-area: image;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-container > img {
+  width: 100%;
+}
+
+.timestamp {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  font-size: x-small;
+  background-color: rgba(24, 24, 24, 0.8);
+  padding: 0.1rem 0.2rem;
+}
+
+.suggestion-title {
+  grid-area: title;
+  width: 70%;
+  font-size: medium;
+  line-height: 1rem;
+  max-height: 2rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0.1rem 0 0 0.5rem;
+}
+
+.suggestion-meta {
+  grid-area: meta;
+  font-size: small;
+  margin-left: 0.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+}
+
+.suggestion-meta > span {
+  color: var(--text-secondary-color);
 }
