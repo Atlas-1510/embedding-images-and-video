@@ -48,6 +48,17 @@ main {
   grid-template-areas: "primary primary secondary";
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .center {
+    display: none;
+  }
+}
+
 .primary-column {
   grid-area: primary;
   padding: var(--content-column-spacing) var(--content-column-spacing) 0 0;
@@ -217,7 +228,6 @@ nav > .end {
 }
 
 .video-meta {
-  height: 18vh;
   padding-top: 1rem;
   border: none;
   border-bottom: 1px solid var(--search-button-color);
