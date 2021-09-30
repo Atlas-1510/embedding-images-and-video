@@ -367,6 +367,7 @@ nav > .end {
   width: 15px;
   height: 15px;
   margin: 0 0.5rem 0 0;
+  cursor: pointer;
 }
 
 .comment > div > div {
@@ -383,11 +384,13 @@ nav > .end {
 .comment-reply {
   color: var(--text-secondary-color);
   padding: 0 0 0 0.5rem;
+  cursor: pointer;
 }
 
 .view-replies {
   color: var(--link-color);
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 .view-replies > span {
