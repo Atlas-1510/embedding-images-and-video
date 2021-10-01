@@ -2,7 +2,7 @@
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/embedding-images-and-video)
 
-[Live Demo]()
+[Live Demo](https://atlas-1510.github.io/embedding-images-and-video/)
 
 ## Assignment
 
